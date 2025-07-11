@@ -1,5 +1,5 @@
-build:
+build:2
   docker:
     worker: Dockerfile
-run:
+run:python
   worker: python3 bot.py
