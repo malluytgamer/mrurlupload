@@ -1,5 +1,5 @@
 build:2
-  docker: render
+
     worker: Dockerfile
 run:python
   worker: python3 bot.py
