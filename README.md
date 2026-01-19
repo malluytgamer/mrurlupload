@@ -1,4 +1,4 @@
-## URL Uᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ V4 🚀 (4GB Support)
+## URL Uᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ V4 🚀
 
 
 [![logo](https://graph.org/file/a7af2d3ece56bbb1297aa.jpg)](https://telegram.dog/UploadLinkToFileBot)
@@ -16,7 +16,15 @@
 
 #
 
-### BUY ME A COFFEE 🥹
+
+# ⚠️ SECURITY WARNING
+
+This is a **public project** — if you fork it and push your bot’s credentials,  
+**everyone can see your secrets** (including your `BOT_TOKEN`, `API_HASH`, or `cookies.txt`).
+
+> Use **Heroku Config Vars**, `.env`, or private forks to keep your credentials safe.  
+
+### BUY ME A COFFEE ☕️
 <a href="https://www.buymeacoffee.com/lisakorean" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 
@@ -177,7 +185,6 @@ Check How To Make MONGODB URL or [YouTube](https://youtu.be/VudXkbirhM8?feature=
 ### Credits and Thanks to ❤️
 
 * [Lisa (Me)](https://github.com/LISA-KOREA)
-* [SpEcHlDe](https://github.com/SpEcHiDe)
 * [Clinton Abraham](https://github.com/Clinton-Abraham)
 * [Tech VJ](https://github.com/VJBots)
 

@@ -116,12 +116,13 @@ async def echo(bot, update):
                 o = entity.offset
                 l = entity.length
                 url = url[o:o + l]
+
+    use_cookies = os.path.exists(cookies_file)
     if Config.HTTP_PROXY != "":
         command_to_exec = [
             "yt-dlp",
             "--no-warnings",
             "--allow-dynamic-mpd",
-            "--cookies", cookies_file,
             "--no-check-certificate",
             "-j",
             url,
@@ -132,7 +133,6 @@ async def echo(bot, update):
             "yt-dlp",
             "--no-warnings",
             "--allow-dynamic-mpd",
-            "--cookies", cookies_file,
             "--no-check-certificate",
             "-j",
             url,
@@ -140,6 +140,8 @@ async def echo(bot, update):
             "IN"
 
         ]
+    if use_cookies:
+        command_to_exec.extend(["--cookies", cookies_file])
     if youtube_dl_username is not None:
         command_to_exec.append("--username")
         command_to_exec.append(youtube_dl_username)
@@ -149,7 +151,7 @@ async def echo(bot, update):
     logger.info(command_to_exec)
     chk = await bot.send_message(
             chat_id=update.chat.id,
-            text=f'ᴘʀᴏᴄᴇssɪɴɢ ʏᴏᴜʀ ʟɪɴᴋ ⌛',
+            text=f'Pʀᴏᴄᴇssɪɴɢ ʏᴏᴜʀ ʟɪɴᴋ ⌛',
             disable_web_page_preview=True,
             reply_to_message_id=update.id,
             parse_mode=enums.ParseMode.HTML

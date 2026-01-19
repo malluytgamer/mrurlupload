@@ -67,12 +67,22 @@
     "VERIFICATION": {
       "description": "Add your verification video link",
       "value": ""
+    },
+    "ADMIN": {
+      "description": "List of administrator user IDs",
+      "required": false,
+      "value": ""
+    },
+    "BANNED_USERS": {
+      "description": "Optional list of user IDs blocked from using the bot",
+      "required": false,
+      "value": ""
     }
   },
   "addons": [
   ],
   "buildpacks": [{
-    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview"
   }, {
     "url": "heroku/python"
   }],
